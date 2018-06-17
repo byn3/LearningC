@@ -1,0 +1,24 @@
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c: In function 'catch_signal':
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:19:20: error: storage size of 'action' isn't known
+   struct sigaction action;
+                    ^~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:21:3: warning: implicit declaration of function 'sigemptyset' [-Wimplicit-function-declaration]
+   sigemptyset(&action.sa_mask);
+   ^~~~~~~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:23:10: warning: implicit declaration of function 'sigaction' [-Wimplicit-function-declaration]
+   return sigaction (sig, &action, NULL);
+          ^~~~~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c: In function 'main':
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:37:16: error: 'SIGALRM' undeclared (first use in this function)
+   catch_signal(SIGALRM, times_up);
+                ^~~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:37:16: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:39:3: warning: implicit declaration of function 'srandom' [-Wimplicit-function-declaration]
+   srandom (time (0));
+   ^~~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:41:13: warning: implicit declaration of function 'random' [-Wimplicit-function-declaration]
+     int a = random() % 11;
+             ^~~~~~
+C:\Users\Byn\Desktop\test\C\mathGame\mathGame.c:44:5: warning: implicit declaration of function 'alarm' [-Wimplicit-function-declaration]
+     alarm(5);
+     ^~~~~
